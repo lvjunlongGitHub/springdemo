@@ -33,10 +33,10 @@ public class UserTest {
     @Test
     public void testTeacher() {
         Teacher teacher = new Teacher();
-        teacher.setName("yajun");
-        teacher.setId(1164063292580790273l);
-        //Boolean aBoolean = teacherService.saveTeacher(teacher);
-        Boolean aBoolean = teacherService.updateTeacher(teacher);
+        teacher.setName("陈康1");
+        //teacher.setId(1164063292580790273l);
+        Boolean aBoolean = teacherService.saveTeacher(teacher);
+        //Boolean aBoolean = teacherService.updateTeacher(teacher);
         System.out.println(aBoolean + "===========================");
     }
 }
