@@ -16,12 +16,21 @@ package com.ljl.service;
 @FunctionalInterface
 public interface TestFunctionalService {
 
+    /**
+     * 抽象方法
+     */
     void say();
 
+    /**
+     * 默认方法
+     */
     default void spell() {
         System.out.println("说话");
     }
 
+    /**
+     * 静态方法
+     */
     static void eat() {
         System.out.println("eat====");
     }
