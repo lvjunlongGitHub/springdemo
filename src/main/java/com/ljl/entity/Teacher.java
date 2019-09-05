@@ -3,6 +3,8 @@ package com.ljl.entity;
 import com.baomidou.mybatisplus.annotation.*;
 
 import java.io.Serializable;
+
+import com.mysql.cj.x.protobuf.MysqlxDatatypes;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -34,7 +36,7 @@ private static final long serialVersionUID=1L;
      * 姓名
      */
     @TableField("name")
-    private String name;
+    private MysqlxDatatypes.Scalar.String name;
 
     /**
      * 创建时间
